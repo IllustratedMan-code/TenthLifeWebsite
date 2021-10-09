@@ -1,4 +1,4 @@
-.b-example-divider {
+.divider-1 {
   height: 3rem;
   background-color: rgba(0, 0, 0, .1);
   border: solid rgba(0, 0, 0, .15);
@@ -29,4 +29,13 @@
 
 .dropdown-toggle {
   outline: 0;
+}
+
+.navbar-nav > li {
+    padding: 15px 30px
+
+}
+
+.navbar {
+  margin-bottom: 20px;
 }

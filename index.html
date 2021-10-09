@@ -14,21 +14,93 @@
   <body>
     <header class="d-flex justify-content-center py-3">
         <img src="images/Banner.png">
+    </header>
+      <nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="Navbar">
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-md-center" id="Navbar">
+                  <ul class=" navbar-nav nav nav-pills" id="myTab">
+                      <li class="nav-item active">
+                          <a href="#home" class="nav-link active" data-bs-toggle="tab">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#about-us" class="nav-link" data-bs-toggle="tab">About Us</a>
+                      </li> <li class="nav-item">
+                          <a href="#adopt" class="nav-link" data-bs-toggle="tab">Adopt</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#ways-to-help" class="nav-link" data-bs-toggle="tab">Ways to Help</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#cat-care" class="nav-link" data-bs-toggle="tab">Cat Care</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#event-calendar" class="nav-link" data-bs-toggle="tab">Event Calendar</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#contact" class="nav-link" data-bs-toggle="tab">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <div class="tab-content">
+          <div class="tab-pane fade show active" id="home">
 
-    </header>
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="pages/about-us.html" class="nav-link">About Us</a></li>
-        <li class="nav-item"><a href="pages/adopt.html" class="nav-link">Adopt</a></li>
-        <li class="nav-item"><a href="pages/ways-to-help.html" class="nav-link">Ways to help</a></li>
-        <li class="nav-item"><a href="pages/cat-care.html" class="nav-link">Cat Care</a></li>
-        <li class="nav-item"><a href="pages/event-calendar.html" class="nav-link">Event Calendar</a></li>
-        <li class="nav-item"><a href="pages/contact.html" class="nav-link">Contact</a></li>
-      </ul>
-    </header>
+              <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                  <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                      <h1 class="display-4 fw-bold lh-1">Border hero with cropped image and shadows</h1>
+                      <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
+                          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                      <img class="rounded-lg-3" src="bootstrap-docs.png" alt="" width="720">
+                  </div>
+              </div>
+
+              <div class="divider-1"></div>
+
+
+          </div>
+          <div class="tab-pane fade" id="about-us">
+          </div>
+
+
+          <div class="tab-pane fade" id="adopt">
+              <div class="px-4 py-5 my-5 text-center">
+                  <img class="d-block mx-auto mb-4" src="images/black-cat.jpg" alt="" width="200" height="200">
+                  <h1 class="display-5 fw-bold">Centered hero</h1>
+                  <div class="col-lg-6 mx-auto">
+                      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+                          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                      </div>
+                  </div>
+              </div>
+
+
+
+
+          </div>
+          <div class="tab-pane fade" id="ways-to-help">
+          </div>
+          <div class="tab-pane fade" id="cat-care">
+          </div>
+          <div class="tab-pane fade" id="event-calendar">
+          </div>
+          <div class="tab-pane fade" id="Contact">
+          </div>
+
+
+      </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
   </body>
 </html>
-
