@@ -1,3 +1,4 @@
+
 .divider-1 {
   height: 3rem;
   background-color: rgba(0, 0, 0, .1);
@@ -32,10 +33,50 @@
 }
 
 .navbar-nav > li {
-    padding: 15px 30px
+  padding: 15px 30px;
 
 }
 
 .navbar {
   margin-bottom: 20px;
+  background-color: #BDD5DB;
+}
+
+
+.contact{
+	padding: 4%;
+	height: 400px;
+}
+.col-md-3{
+	background: #F0C9DB;
+	padding: 4%;
+	border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+	margin-top:10%;
+}
+.contact-info img{
+	margin-bottom: 15%;
+}
+.contact-info h2{
+	margin-bottom: 10%;
+}
+.col-md-9{
+	background: #fff;
+	padding: 3%;
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+	font-weight:600;
+}
+.btn-primary{
+  background: #85976F;
+  border-color: #535F45;
+}
+.btn-primary:hover{
+  background: #535F45;
+  border-color: #535F45;
+
 }
