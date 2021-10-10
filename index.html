@@ -13,22 +13,45 @@
         <div class="album py-5 bg-light">
             <div class="container">
 
-                <div id="add-here" class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                <div id="add-here" class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
                     <div id="col" class="col">
-                        <div class="card shadow-sm">
-                            <img id=img width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail">
+                        <div class="card shadow-sm ratio-1x1">
+                            <img id=img width="50%" height="auto" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail">
                             <div class="card-body">
                                 <p id=text class="card-text">Oops! No one is here.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-primary">View</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="border-hero">
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 id="header" class="display-4 fw-bold lh-1">Border hero with cropped image and shadows</h1>
+                    <p id="text" class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div id="button" class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                    </div>
+                </div>
+                <div id=img-container class="col-lg-3  offset-lg-1 p-1 overflow-hidden shadow-lg">
+                    <img id="img" class="rounded-lg-3" src="" alt="" width=100%>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="centered-hero">
+        <div class="px-4 py-5 my-5 text-center">
+            <img id=img class="d-block mx-auto mb-4" src="" alt="" width="200" height=auto>
+            <h1 id="header" class="display-5 fw-bold">Centered hero</h1>
+            <div class="col-lg-6 mx-auto">
+                <p id="text" class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div id="button" class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 </div>
             </div>
         </div>
@@ -38,7 +61,7 @@
   </head>
   <body>
     <header class="d-flex justify-content-center py-3">
-        <img src="images/Banner.png">
+        <img src="images/Banner.svg" class="img-fluid" alt="">
     </header>
       <nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="Navbar">
           <div class="container-fluid">
@@ -73,50 +96,44 @@
       </nav>
       <div class="tab-content">
           <div class="tab-pane fade show active" id="home">
-
-              <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-                  <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                      <h1 class="display-4 fw-bold lh-1">Border hero with cropped image and shadows</h1>
-                      <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
-                          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                      </div>
-                  </div>
-                  <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                      <img class="rounded-lg-3" src="bootstrap-docs.png" alt="" width="720">
-                  </div>
-              </div>
-
-              <div class="divider-1"></div>
-
-
+              <border-hero header="Our Mission" img="images/tiger.jpg">
+                  The Tenth Life is a no-kill cat rescue located in the Dayton, OH area. We have been in operation since 1984 and have rescued thousands of cats, most of which are able to be adopted out after proper care is administered.
+              </border-hero>
+              <cat-album size="3" img="images/bissel.jpg", text="" img-1="images/kroger.jpg" text-1="" text-2="" img-2="images/bbb.jpg"></cat-album>
           </div>
+
           <div class="tab-pane fade" id="about-us">
+              <border-hero header="Our Story" img="images/black-cat.jpg">
+                  Many people have asked us how The Tenth Life was started. We, Jerry and Marsha, started The Tenth Life in November 1984. We had volunteered with another organization for about five years when we saw the need to start a no-kill cat facility in this area. We dreamed of an organization with a full-time veterinarian and health care facility to provide all of the medical needs for the cats in-house. We looked for land to purchase to build a facility,but realized that it was too late in the year to be able to build a new building. We began looking for old farmhouses to refurbish, but the amount of work needed to bring the houses up to the level we required was too involved. When we found the current location advertised in the newspaper, we fell in love with the property while traveling up the driveway. The setting was beautiful. The brick ranch house was located on seven acres of land that would provide room for expansion if we needed to do so in the future. As we looked through the house, the owner was trying to tell us about the property, but we were too busy deciding how many cats could live in each room! We knew when we left that this was the home for The Tenth Life. We went back again to look at the house a few days later so we could determine the amount to offer for the property and the contingencies we wanted to address in the offer. Our offer was accepted and The Tenth Life was born.
 
+              </border-hero>
           </div>
-
 
           <div class="tab-pane fade" id="adopt">
-              <div class="px-4 py-5 my-5 text-center">
-                  <img class="d-block mx-auto mb-4" src="images/black-cat.jpg" alt="" width="200" height="200">
-                  <h1 class="display-5 fw-bold">Centered hero</h1>
-                  <div class="col-lg-6 mx-auto">
-                      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-                      </div>
-                  </div>
-              </div>
+              <centered-hero header="Jim" img="images/black-cat.jpg" button-1="Adopt"></centered-hero>
+              <div class="divider-1"></div>
               <cat-album size="5" img="images/black-cat.jpg" img-1="images/black-cat.jpg" text="Hi there I'm Jim"></cat-album>
           </div>
+
           <div class="tab-pane fade" id="ways-to-help">
+              <border-hero header="Cash" img="images/black-cat.jpg">
+                  The size is always right and so is the color; therefore it is an ideal gift! The cash donations to The Tenth Life are tax deductible (if you itemize on your taxes), and are used for a variety of purposes. The day-to-day operation of the organization is the primary use. The monies are used for food, litter, medicines, expendable supplies, utilities, repairs to the structure, advertising (perpetual ad in The Dayton Daily News), and the Veterinarian’s salary.
+              </border-hero>
+              <border-hero header="Volunteer at The Tenth Life" img="images/two-cats.jpg">
+                  We always need more volunteers at The Tenth Life. Even though we have a dedicated group of volunteers who do most of the everyday care for the cats, there is always a need for more. The volunteers sweep floors, scoop litter boxes, give food and water, clean walls and furniture, and give lots of attention and love to the cats. We have divided the facility into segments which require no more than a couple of hours of your time once a week to ensure that the cats have the best living arrangements we can provide. We also have volunteers who provide support to craft sales, the flower sale, the greenery sale, and other labor-intensive activity which do not require you to actually interface with the cats. It takes approximately seven people each day to keep the cats’ living areas clean and give them the love that they deserve. Please consider volunteering; you would love the interaction with the cats and other cat lovers. It is truly a rewarding experience!
+              </border-hero>
           </div>
+
           <div class="tab-pane fade" id="cat-care">
+              <border-hero header="Kitty on Your Furniture" img="images/White-cat.jpg">
+                  If you do not wish to share your furniture with your cat, you can simply remove him from wherever they are not welcome and say a stern no to let them know that that behavior is unacceptable. If this doesn’t work as easily as you wish, you can spray kitty with water each time they get on your furniture to let them know you would rather they not be there. In extreme cases, you might add some lemon juice or vinegar to your spray. The lemon juice or vinegar will mildly irritate kitty but, at the same time, will get kitty’s attention. If the first attempt to dissuade kitty doesn’t work, continue to spray him and he will eventually get the message that his behavior is not acceptable.               </border-hero>
+              </border-hero>
+
           </div>
+
           <div class="tab-pane fade" id="event-calendar">
           </div>
+
           <div class="tab-pane fade" id="Contact">
           </div>
 
