@@ -80,3 +80,14 @@
   border-color: #535F45;
 
 }
+.btn-primary:visited{
+  background: #535F45;
+  border-color: #535F45;
+
+}
+.btn-primary:focus{
+  background: #535F45;
+  border-color: #535F45;
+  box-shadow: none;
+
+}
